@@ -1,3 +1,7 @@
-console.log("Script is working from a different file")
-alert(  "totally legit website !")
-
+var btnTranslate = document.querySelector("#btn-translate");
+var txtInput = document.querySelector("#txt-input")
+function clickHandler() {
+    console.log("clicked");
+    console.log(txtInput.value);
+};
+btnTranslate.addEventListener("click", clickHandler)
